@@ -1,33 +1,42 @@
-🌤️ Weather Info Fetcher (API Integration with Python)
+# 🌤️ Weather Info Fetcher
 
-📌 Description
-This Python script demonstrates API integration by interacting with the OpenWeatherMap API to fetch and display real-time weather data for a given city. It uses the requests library to send HTTP GET requests and formats the JSON response for better readability.
+A Python command-line application that fetches real-time weather data for any city using the OpenWeatherMap API.
 
-🎯 Objectives
-Make GET requests to an external API using the requests library.
-Parse JSON data from the API response.
-Display weather information (I choose description and temperature) in a user-friendly format.
-Handle errors such as failed requests or invalid city names.
+## 🚀 Live Demo
+No deployment — runs locally via terminal.
 
-🛠️ Requirements
-Python 3.x
-requests library
+## 📌 Features
+- Fetches current weather data by city name
+- Displays temperature (°C) and weather description
+- Parses and pretty-prints full JSON API response
+- Handles REST API integration using the `requests` library
 
-Install the required library using pip:
+## 🛠️ Tech Stack
+Python, Requests, JSON, OpenWeatherMap API
+
+## ▶️ How to Run
+
+```bash
 pip install requests
+python api.py
+```
 
-🚀 How to Run
-Clone the repository:
-git clone https://github.com/your-username/weather-api-integration.git
-cd weather-api-integration
+Enter any city name when prompted.
 
-Run the script:
-python weather_api.py
-Enter a city name when prompted
+## 📋 Sample Output
+```
+Enter a city name: Hyderabad
+The current weather Description is: clear sky & Temperature is: 32.4
+```
 
-🧩 Notes
-The script uses metric units (°C).
-Make sure to replace the api_key with your own OpenWeatherMap API key.
+## 📁 Project Structure
+```
+weather-info-fetcher/
+├── api.py
+└── README.md
+```
 
-📃 License
-This project is licensed under the MIT License.
+## 🧠 Skills Demonstrated
+- REST API integration
+- JSON parsing and formatting
+- Python scripting and input handling
